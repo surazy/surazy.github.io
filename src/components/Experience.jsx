@@ -20,7 +20,7 @@ const experiences = [
     bullets: [
       'Developed and published mobile apps with React Native and Expo.',
       'Integrated third-party APIs and push notification services.',
-      'Optimised app performance and reduced bundle sizes.',
+      'Optimized app performance and reduced bundle sizes.',
     ],
   },
 ]
