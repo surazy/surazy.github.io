@@ -74,14 +74,16 @@ export default function ParticleCanvas() {
     createParticles()
     draw()
 
-    window.addEventListener('resize', () => {
+    const handleResize = () => {
       resize()
       createParticles()
-    })
+    }
+
+    window.addEventListener('resize', handleResize)
 
     return () => {
       cancelAnimationFrame(animId)
-      window.removeEventListener('resize', resize)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
