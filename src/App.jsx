@@ -7,11 +7,13 @@ import Experience from './components/Experience.jsx'
 import Education from './components/Education.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import ParticleCanvas from './components/ParticleCanvas.jsx'
 import './App.css'
 
 function App() {
   return (
     <>
+      <ParticleCanvas />
       <Navbar />
       <main>
         <Hero />
