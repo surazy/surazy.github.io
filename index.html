@@ -9,6 +9,8 @@
     <meta name="keywords" content="surazy, developer, full-stack, React, React Native, Electron, Supabase, portfolio" />
     <link rel="canonical" href="https://surazy.me/" />
     <meta name="theme-color" content="#0ea5a4" />
+    <!-- Content Security Policy: block inline scripts, allow eval for dev tooling -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; connect-src 'self' https://api.github.com; font-src 'self' data:; base-uri 'self'; frame-ancestors 'none'">
     <link rel="preconnect" href="https://github.com" crossorigin />
     <!-- OpenGraph -->
     <meta property="og:type" content="website" />
