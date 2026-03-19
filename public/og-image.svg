@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0ea5a4" />
+      <stop offset="1" stop-color="#0284c7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)" />
+  <g fill="#fff" font-family="Inter, Arial, sans-serif">
+    <text x="60" y="220" font-size="64" font-weight="700">surazy</text>
+    <text x="60" y="300" font-size="28">Full-stack developer — React · React Native · Electron</text>
+    <rect x="60" y="360" width="140" height="40" rx="8" fill="#fff" opacity="0.08" />
+    <text x="72" y="388" font-size="18">surazy.me</text>
+  </g>
+</svg>
