@@ -1,6 +1,4 @@
 /* App-level layout spacing */
 main {
   min-height: 100vh;
-  position: relative;
-  z-index: 1;
 }

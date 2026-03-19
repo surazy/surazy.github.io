@@ -1,6 +1,6 @@
 .contact-section {
-  background: rgba(6, 8, 15, 0.6);
-  border-top: 1px solid rgba(0, 243, 255, 0.06);
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
 }
 
 .contact__intro {
@@ -29,7 +29,6 @@
 
 .contact__item:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
 }
 
 .contact__icon {
@@ -42,11 +41,10 @@
 .contact__label {
   font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent);
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
   font-weight: 600;
   margin-bottom: 0.2rem;
-  text-shadow: 0 0 6px rgba(0, 243, 255, 0.2);
 }
 
 .contact__display {

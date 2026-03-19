@@ -7,17 +7,6 @@
 
 .about__avatar-wrap {
   flex-shrink: 0;
-  position: relative;
-}
-
-.about__avatar-wrap::before {
-  content: '';
-  position: absolute;
-  inset: -8px;
-  border-radius: 50%;
-  background: conic-gradient(from 0deg, var(--accent), var(--accent-secondary), var(--accent));
-  animation: avatarSpin 4s linear infinite;
-  opacity: 0.5;
 }
 
 .about__avatar {
@@ -25,10 +14,8 @@
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--bg);
-  box-shadow: 0 0 30px rgba(0, 243, 255, 0.15);
-  position: relative;
-  z-index: 1;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-soft);
 }
 
 .about__text {
@@ -44,7 +31,7 @@
 }
 
 .about__text strong {
-  color: var(--accent);
+  color: var(--text);
 }
 
 .about__links {
@@ -52,10 +39,6 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 0.5rem;
-}
-
-@keyframes avatarSpin {
-  to { transform: rotate(360deg); }
 }
 
 @media (max-width: 640px) {

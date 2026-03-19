@@ -1,5 +1,5 @@
 .footer {
-  border-top: 1px solid rgba(0, 243, 255, 0.06);
+  border-top: 1px solid var(--border);
   padding: 2rem 0;
   background: var(--bg);
 }
@@ -17,7 +17,6 @@
   font-weight: 700;
   color: var(--accent);
   font-family: 'Courier New', monospace;
-  text-shadow: 0 0 8px rgba(0, 243, 255, 0.3);
 }
 
 .footer__copy {
@@ -33,12 +32,11 @@
 .footer__links a {
   font-size: 0.85rem;
   color: var(--text-muted);
-  transition: color var(--transition), text-shadow var(--transition);
+  transition: color var(--transition);
 }
 
 .footer__links a:hover {
   color: var(--accent);
-  text-shadow: 0 0 8px rgba(0, 243, 255, 0.3);
 }
 
 @media (max-width: 540px) {
