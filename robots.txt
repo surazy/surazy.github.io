@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://surazy.me/sitemap.xml
-# Crawl-delay: 10  # Uncomment to rate-limit bots if necessary
