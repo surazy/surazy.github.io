@@ -1,27 +1,13 @@
 .skills-section {
-  background: rgba(6, 8, 15, 0.6);
-  border-top: 1px solid rgba(0, 243, 255, 0.06);
-  border-bottom: 1px solid rgba(0, 243, 255, 0.06);
-  position: relative;
-}
-
-.skills-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(0, 243, 255, 0.015) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 243, 255, 0.015) 1px, transparent 1px);
-  background-size: 40px 40px;
-  pointer-events: none;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1.25rem;
-  position: relative;
-  z-index: 1;
 }
 
 .skills__group {
@@ -32,10 +18,9 @@
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--accent);
   margin-bottom: 1rem;
-  text-shadow: 0 0 8px rgba(0, 243, 255, 0.3);
 }
 
 .skills__list {
@@ -45,20 +30,18 @@
 }
 
 .skills__tag {
-  background: rgba(0, 243, 255, 0.05);
+  background: var(--accent-soft);
   color: var(--text);
   padding: 0.3rem 0.75rem;
   border-radius: 100px;
   font-size: 0.85rem;
   font-weight: 500;
-  border: 1px solid rgba(0, 243, 255, 0.1);
-  transition: all var(--transition);
+  border: 1px solid var(--border);
+  transition: background var(--transition), border-color var(--transition);
 }
 
 .skills__tag:hover {
-  background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+  background: var(--accent);
   color: #fff;
-  border-color: transparent;
-  box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
-  transform: translateY(-1px);
+  border-color: var(--accent);
 }
